@@ -1,0 +1,376 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.header
+{
+    width: 100%;
+    height: 99px;
+    background: #fff;
+}
+
+.header .container
+{
+    width: 1200px;
+    margin: auto;
+    height: 99px;
+}
+
+.header-button
+{
+    display: none;
+}
+
+.header .container>div
+{
+    float: left;
+}
+
+.header .container .header-search-set
+{
+    float: right;
+}
+
+.header-logo
+{
+    margin-right: 15px;
+}
+
+.header-logo h1
+{
+    width: 170px;
+    height: 51px;
+    margin-top: 25px;
+    background: url(../img/logo.svg);
+}
+
+.header-list
+{
+    margin-top: 25px;
+}
+
+.header-list a,
+.header-list-dropdown
+{
+    display: inline-block;
+    margin: 0 6px;
+    width: 88px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.header-list a:nth-child(4)
+{
+    width: 55px;
+}
+
+.header-list-dropdown
+{
+    width: 108px;
+}
+
+.header-list-dropdown-list
+{
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px lightgray;
+}
+
+.header-list-dropdown-list a
+{
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.header-list-dropdown-list a:last-child
+{
+    border-bottom: 0;
+}
+
+.header-search
+{
+    width: 411px;
+    height: 32px;
+    margin-top: 34px;
+    box-shadow: 0 0 1px 1px lightgray;
+    border-radius: 50px;
+}
+
+.header-search span
+{
+    display: block;
+    width: 16px;
+    height: 32px;
+    background: url(../img/search.png) center no-repeat;
+    float: right;
+    margin-right: 1em;
+}
+
+.banner
+{
+    height: 506px;
+    background: url(../img/20171212banner.png) center no-repeat;
+}
+
+.content
+{
+    height: 205px;
+    width: 1020px;
+    margin: 65px auto;
+}
+
+.content>div
+{
+    margin: 0 66px;
+    width: 205px;
+    height: 200px;
+    float: left;
+}
+
+.content>div>h3
+{
+    line-height: 30px;
+    font-size: 28px;
+    color: #111;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.content>div>p
+{
+    margin-top: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+}
+
+.content>div>div
+{
+    margin-top: 30px;
+}
+
+.content-pc-pic>div
+{
+    float: left;
+    width: 73px;
+    height: 105px;
+    text-align: center;
+}
+
+.content-pc-windows
+{
+    margin-right: 45px;
+}
+
+.content-pc-windows-pic
+{
+    width: 73px;
+    height: 73px;
+    background: #333 url(../img/winlogo.png) center center no-repeat;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content-pc-mac-pic
+{
+    width: 73px;
+    height: 73px;
+    background: #333 url(../img/AppleLogo.png) center center no-repeat;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content-phone-pic
+{
+    width: 205px;
+    height: 110px;
+    background: url(../img/phoneCode.png) center no-repeat;
+}
+
+.content-pad-pic
+{
+    width: 205px;
+    height: 110px;
+    background: url(../img/ipadCode.png) center no-repeat;
+}
+
+.footer
+{
+    font-size: 12px;
+    text-align: center;
+    background: #333;
+    color: #d0d0d0;
+    padding: 50px;
+}
+
+.footer p
+{
+    margin-top: 8px;
+}
+
+.footer-red
+{
+    color: #f13232;
+}
+
+.footer-icon-record
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/jgwab.png);
+    background-size: 12px;
+}
+
+.footer-icon-Integrity
+{
+    width: 57px;
+    height: 22px;
+    background: url(../img/13487953879693.png);
+    background-size: 57px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .header-logo,
+    .header-list,
+    .header-list a,
+    .header-list-dropdown
+    {
+        margin: 0;
+    }
+
+    .header .container
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+    .header
+    {
+        height: 71px;
+        position: fixed;
+    }
+
+    .header-button
+    {
+        display: block;
+        font-size: 40px;
+        color: gray;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+    }
+
+    .header .container>div
+    {
+        float: none;
+    }
+
+    .header-logo h1
+    {
+        margin: 10px auto;
+    }
+
+    .header-list,
+    .header-search
+    {
+        background: #fff;
+    }
+
+    .header-list a,
+    .header-list a:nth-child(4),
+    .header-list-dropdown
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .header-list-dropdown
+    {
+        border-bottom: 0;
+    }
+
+    .header-list
+    {
+        position: relative;
+        top: 30px;
+    }
+
+    .header-search
+    {
+        width: 100%;
+        float: top;
+        margin: 10px 0;
+        background: #fafafa;
+    }
+
+    .header-search-set
+    {
+        height: 41px;
+        background: #fff;
+        padding: 0 5px;
+        position: relative;
+        top: -265px;
+        width: 96%;
+        padding: 0 2%;
+    }
+
+    .banner
+    {
+        padding-top: 71px;
+    }
+
+    .header-list,
+    .header-search-set
+    {
+        display: none;
+    }
+
+    .banner
+    {
+        background-size: 150%;
+        height: 223px;
+    }
+
+    .container
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content
+    {
+        width: 80%;
+        margin: auto;
+        height: 780px;
+    }
+
+    .content>div
+    {
+        float: none;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .footer
+    {
+        padding: 20px;
+        font-size: 10px;
+    }
+}
